@@ -1,5 +1,5 @@
 # Machine_Learning_task_1 : Linear_Regression
-
+<pre>
 Contains the code for Linear Regression required for the task of Machine Learning
 
 A class for Linear Regression has been created, named Linear_Regression(), with 2 methods: .train(...) and .predict(...)
@@ -11,7 +11,9 @@ Parameters for .train(...):
                             verbose -> bool type variable for showing loss, along with a graph, at set intervals of number of iterations, type : bool
                             show_at -> iterations after which loss and graph is to be shown, applicable only if verbose = True, type : integer
 
-.train(...) standardizes training features and runs batch gradient descent. Cost function used is Mean Squared Error : 1/N * Summation( (y - y_train) ^ 2), where y is the predicted training label and y_train is the training label. 
+.train(...) standardizes training features and runs batch gradient descent. 
+Cost function used is Mean Squared Error : 1/N * Summation( (y - y_train) ^ 2)
+                            where y is the predicted training label and y_train is the training label. 
 
 Parameters for .predict(...): 
                             X_test -> Features for Test set of shape (N, D), where N is the number of testing examples
@@ -19,6 +21,8 @@ Parameters for .predict(...):
 
 .predict(...) standardizes testing features w.r.t mean and standard deviation of training features.
 
-Metric used for calculating accuracy is Root Mean Squared Error (RMSE) calculated as : ( 1/N * Summation( (y_pred - y_test) ^ 2)) ^ (0.5) , where y_pred is the predicted test label and y_test is the test label. 
-
+Metric used for calculating accuracy is Root Mean Squared Error (RMSE) calculated as : 
+                            ( 1/N * Summation( (y_pred - y_test) ^ 2)) ^ (0.5)
+                            where y_pred is the predicted test label and y_test is the test label. 
 RMSE for test data = 3.07130626802989
+</pre>
